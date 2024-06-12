@@ -19,12 +19,12 @@ products.forEach((product)=>{
   <img class="product-rating-stars"
   src="${product.getStarsUrl()}">
     <div class="product-rating-count link-primary">
-    ${product.getprice()}
+    ${product.rating.stars}
     </div>
   </div>
 
   <div class="product-price">
-  &#8377 ${product.price}
+  &#8377 ${product.getprice()}
   </div>
 
   <div class="product-quantity-container">
@@ -42,6 +42,7 @@ products.forEach((product)=>{
   </select>
   </div>
 
+  ${product.extraInfoHTML()}
   <div class="product-spacer"></div>
 
   <div class="added-to-cart">

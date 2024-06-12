@@ -35,7 +35,7 @@ cart.forEach((cartItem)=>{
                   ${matchingproduct.name}
                 </div>
                 <div class="product-price">
-                  &#8377 ${matchingproduct.price}
+                  &#8377 ${matchingproduct.getprice()}
                 </div>
                 <div class="product-quantity">
                   <span>

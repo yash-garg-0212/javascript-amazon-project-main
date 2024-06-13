@@ -5,7 +5,15 @@ import { loadProductsFetch } from "../data/products.js";
 // import '../data/cart-oop.js';
 // import '../data/backend.js';
 
-loadProductsFetch().then(()=>{
+async function loadPage(){
+
+  await loadProductsFetch();
   renderOrderSummary();
   renderPaymentSummary();
-});
+};
+loadPage();
+
+// loadProductsFetch().then(()=>{
+//   renderOrderSummary();
+//   renderPaymentSummary();
+// });

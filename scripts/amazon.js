@@ -1,9 +1,12 @@
 import {cart} from "../data/cart.js"
-import { products, loadProducts } from "../data/products.js";
+import { products, loadProductsFetch } from "../data/products.js";
 import { addToCart } from "../data/cart.js";
 
 
-loadProducts(renderProducts);
+// loadProducts(renderProducts);
+loadProductsFetch().then(()=>{
+  renderProducts();
+});
 
 function renderProducts(){
   let productsHTML = '';

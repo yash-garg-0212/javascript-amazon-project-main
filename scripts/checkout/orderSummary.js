@@ -1,5 +1,5 @@
 import { cart, removeFromCart, updateDeliveryOption } from '../../data/cart.js';
-import { getmatchingProduct, loadProducts } from '../../data/products.js';
+import { getmatchingProduct } from '../../data/products.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 import { deliveryOptions, getDeliveryOption } from '../../data/deliveryOption.js';
 import { renderPaymentSummary } from './paymentSummary.js';

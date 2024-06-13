@@ -128,4 +128,4 @@ export function renderOrderSummary() {
 }
 
 // Ensure products are loaded before rendering the order summary
-loadProducts(renderOrderSummary);
+// loadProducts(renderOrderSummary);

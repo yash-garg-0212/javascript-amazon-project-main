@@ -49,10 +49,8 @@ export function loadProducts(callback) {
         return new Clothing(productDetails);
       }
       return new Product(productDetails);
-    });
-
-    console.log('Products loaded:', products);
-
+      });
+    console.log('load products');
     callback();
   });
 
